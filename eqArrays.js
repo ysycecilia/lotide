@@ -1,4 +1,4 @@
-// check if two arrays are identical (not work for nested arrays or arrays of objects)
+
 const eqArrays = function(array1, array2) {
   if (!Array.isArray(array1) || !Array.isArray(array2) || array1.length !== array2.length) return false;
  
