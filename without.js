@@ -9,19 +9,6 @@ const without = function(source, itemToRemove) {
   console.log(removedSource);
 };
 
-// const findSharedItems = function(source, itemToRemove) {
-//   //console.log("itemToRemove: ",itemToRemove);
-//   let shareItems = [];
-//   for (let s of source) {
-//     for (let i of itemToRemove) {
-//       if (s === i)
-//         shareItems.push(i);
-//     }
-//   }
-//   return shareItems;
-//   //console.log(shareItems);
-// };
-
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2))
     console.log(`array: ${array1} and array: ${array2} are equal to each other. `);
@@ -44,7 +31,6 @@ const words = ["hello", "world", "lighthouse"];
 without(words, ["hello","lighthouse"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-
 
 without([1, 2, 3], [1]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
