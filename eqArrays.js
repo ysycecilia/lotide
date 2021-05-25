@@ -1,11 +1,4 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected)
-    console.log(`🙆🙆‍♂️🙆 Assertion Passed: ${actual} === ${expected}`);
-  else
-    console.log(`🙅🙅‍♂️🙅 Assertion Failed: ${actual} !== ${expected}`);
-};
-
+// check if two arrays are identical (not work for nested arrays or arrays of objects)
 const eqArrays = function(array1, array2) {
   if (!Array.isArray(array1) || !Array.isArray(array2) || array1.length !== array2.length) return false;
  
@@ -15,6 +8,13 @@ const eqArrays = function(array1, array2) {
     }
   }
   return true;
+};
+
+const assertEqual = function(actual, expected) {
+  if (actual === expected)
+    console.log(`🙆🙆‍♂️🙆 Assertion Passed: ${actual} === ${expected}`);
+  else
+    console.log(`🙅🙅‍♂️🙅 Assertion Failed: ${actual} !== ${expected}`);
 };
 
 assertEqual(eqArrays("1", ["1"]), true); // should fail
