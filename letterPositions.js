@@ -36,8 +36,8 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-let a = {h:[0],e:[1],l:[2,3],o:[4]};
-assertArraysEqual((JSON.stringify(letterPositions("h ello"))), JSON.stringify(a));
+//let a = {h:[0],e:[1],l:[2,3],o:[4]};
+//assertArraysEqual((JSON.stringify(letterPositions("h ello"))), JSON.stringify(a));
 
 
 assertArraysEqual(letterPositions("hello").e, [1]);
