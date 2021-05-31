@@ -13,7 +13,7 @@ const countOnly = function(allItems, itemsToCount) {
     // increment the counter for each item:
     //   set a property with that string key to:
     //     the value that was already there (or zero if nothing there) with 1 added to it.
-    // only increment count in results if the item is found in itemsToCount 
+    // only increment count in results if the item is found in itemsToCount
     if (itemsToCount[item]) {
       if (results[item]) {
         results[item] += 1;
